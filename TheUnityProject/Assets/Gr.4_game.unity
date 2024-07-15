@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 976803668}
   - component: {fileID: 976803667}
   m_Layer: 5
-  m_Name: Image
+  m_Name: NPC chatbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1055,17 +1055,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976803665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 7.2798457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1593384236}
-  m_Father: {fileID: 1514147281}
+  m_Father: {fileID: 2077611627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 187}
+  m_AnchoredPosition: {x: 19.02124, y: -164.70837}
   m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976803667
@@ -1084,7 +1084,14 @@ MonoBehaviour:
   - Hejsa!
   - Pizza
   - Kage
+  - NotKage
   chatBoxText: {fileID: 1593384237}
+  objectsToActivate:
+  - {fileID: 552547730}
+  - {fileID: 1881733476}
+  - {fileID: 63117855}
+  - {fileID: 1176645891}
+  objectToDeactivate: {fileID: 2077611626}
 --- !u!114 &976803668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1142,7 @@ GameObject:
   - component: {fileID: 1093573526}
   - component: {fileID: 1093573525}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: NPC avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,16 +1155,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093573523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 7.2798457}
   m_LocalScale: {x: 4.7389, y: 4.7389, z: 4.7389}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1514147281}
+  m_Father: {fileID: 2077611627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 64}
+  m_AnchoredPosition: {x: 19.02124, y: 96.291626}
   m_SizeDelta: {x: 100, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093573525
@@ -1757,11 +1764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f9f7c7231ce1745864629c0bf16431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToActivate:
-  - {fileID: 552547730}
-  - {fileID: 1881733476}
-  - {fileID: 63117855}
-  - {fileID: 1176645891}
+  objectToActivate: {fileID: 2077611626}
 --- !u!65 &1443615056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1894,8 +1897,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1176645892}
-  - {fileID: 1093573524}
-  - {fileID: 976803666}
+  - {fileID: 2077611627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1915,7 +1917,7 @@ GameObject:
   - component: {fileID: 1593384238}
   - component: {fileID: 1593384237}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NPC chatbox text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1960,7 +1962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Blah blah blah
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2210,6 +2212,39 @@ Transform:
   m_Children:
   - {fileID: 45870696}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077611626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077611627}
+  m_Layer: 0
+  m_Name: Encounter 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2077611627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077611626}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.02124, y: -32.291626, z: -7.2798457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1093573524}
+  - {fileID: 976803666}
+  m_Father: {fileID: 1514147281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121730285
 GameObject:

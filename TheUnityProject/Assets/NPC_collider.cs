@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class NPC_collider : MonoBehaviour
 {
-    public GameObject[] objectsToActivate;
+    
+    public GameObject objectToActivate;
     void Start()
     {
         
@@ -22,10 +23,8 @@ public class NPC_collider : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                foreach (var GameObject in objectsToActivate)
-                {
-                    GameObject.SetActive(true);
-                }
+                objectToActivate.SetActive(true);
+                
             }
         }
     }
