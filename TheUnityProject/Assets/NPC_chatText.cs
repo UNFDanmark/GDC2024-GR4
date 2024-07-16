@@ -9,6 +9,7 @@ public class NPC_chatText : MonoBehaviour
     public TMPro.TMP_Text chatBoxText;
     public GameObject[] objectsToActivate;
     public GameObject objectToDeactivate;
+    public player_movement PlayerMovement;
     void Start()
     {
         chatBoxText.text = NPC_chatten[chatIndex];
@@ -25,6 +26,7 @@ public class NPC_chatText : MonoBehaviour
             else
             {
                 objectToDeactivate.SetActive(false);
+                PlayerMovement.canJump = true;
                 foreach (var GameObject in objectsToActivate)
                 {
                     GameObject.SetActive(true);

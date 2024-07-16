@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Game_startScript : MonoBehaviour
 {
-    public GameObject startScreen; 
+    public GameObject startScreen;
+    public player_movement PlayerMovement;
     void Start()
     {
-        
+        PlayerMovement.canJump = false;
     }
     
     void Update()
@@ -15,7 +16,7 @@ public class Game_startScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             startScreen.SetActive(false);
-            print("Startscreen = false");
+            PlayerMovement.canJump = true;
         }
     }
 }

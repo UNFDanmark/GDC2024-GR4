@@ -7,6 +7,7 @@ public class NPC_collider : MonoBehaviour
 {
     
     public GameObject objectToActivate;
+    public player_movement PlayerMovement;
     void Start()
     {
         
@@ -23,6 +24,7 @@ public class NPC_collider : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
+                PlayerMovement.canJump = false;
                 objectToActivate.SetActive(true);
                 
             }

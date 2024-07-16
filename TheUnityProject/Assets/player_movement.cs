@@ -7,6 +7,7 @@ public class player_movement : MonoBehaviour
     public float jumpForce = 10;
     public FeetCollider feetCollider;
     public float sprintingSpeed = 10;
+    public bool canJump = true;
     
     void Start()
     {
@@ -23,7 +24,7 @@ public class player_movement : MonoBehaviour
             movement.x = Input.GetAxisRaw("Horizontal") * sprintingSpeed;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && feetCollider.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && feetCollider.isGrounded && canJump)
         {
             movement.y += jumpForce;
         }
