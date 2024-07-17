@@ -13,6 +13,7 @@ public class bushnHider : MonoBehaviour
 
     // Variables added by Daniel
     private bool didPressKey;
+    public carrotPickup colliderToActivate;
     
     void Start()
     {
@@ -30,7 +31,11 @@ public class bushnHider : MonoBehaviour
             }
             else
             {
-                didPressKey = Input.GetKeyDown(KeyCode.E);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    didPressKey = true;
+                    colliderToActivate.enabled = true;
+                }
             }
         }
         else
