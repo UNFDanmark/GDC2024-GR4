@@ -10,6 +10,10 @@ public class bushnHider : MonoBehaviour
     public MeshRenderer bushObject;
     private bool isTimeTickingDown = false;
     private Material material;
+
+    // Variables added by Daniel
+    private bool didPressKey;
+    
     void Start()
     {
         material = bushObject.material;
@@ -20,21 +24,27 @@ public class bushnHider : MonoBehaviour
     {
         if (isTimeTickingDown)
         {
-            opacityTimeLeft -= Time.deltaTime;
+            if (didPressKey)
+            {
+                opacityTimeLeft -= Time.deltaTime;
+            }
+            else
+            {
+                didPressKey = Input.GetKeyDown(KeyCode.E);
+            }
         }
         else
         {
             if (opacityTimeLeft < opacityTime)
             {
+                didPressKey = false;
                 opacityTimeLeft += Time.deltaTime;
             }
-           
         }
             
         if (opacityTimeLeft < 0)
         {
             opacityTimeLeft = 0;
-            
         }
 
         var color = material.color;
