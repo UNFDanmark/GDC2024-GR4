@@ -1,0 +1,39 @@
+First E press with fox:
+
+"Help! Our rabbits are dissapearing, we need your help to find them!"
+E press. (next)
+"To find them, press E to interact. They m,ight be sneaky so keep an eye out for them. Look, try that bush over there."
+
+
+
+Less than five rabbits collected:
+
+Fox: "Oh, did you only find so many? There's not enough rabbits, we're still missing some... we'll have to eat something else..."
+
+Mouse: "That'll do, that'll be enough for stew."
+Mouse: "Join us at the cottage."
+
+E press at the cottage.
+
+Wolpertinger: "You were too late. They're all gone."
+
+Dårlig endscreen skærm.
+
+
+
+
+More than five rabbits collected:
+
+Fox: "Thanks for finding the rabbits for us, you should join for dinner."
+
+Mouse: "You can find us at the cottage."
+
+E press at the cottage.
+
+Wolpertinger: "Join us in our Revolution against the fox and mouse. They're evil."
+
+Fade to black.
+
+White text.
+
+"You and the rabbits won the Revolution. Vive la révolution!"
