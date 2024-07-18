@@ -1,0 +1,10 @@
+Titel: World of secrets
+
+Controlls:
+
+	Walking: wasd / piltsterne
+	Running: shift
+	Jumping: mellemrum
+	Interact: E
+
+Collect rabbits in a World of Secrets and uncover the truth, as you explore both the skies and under the murky waters of our world. 
