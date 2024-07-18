@@ -25,9 +25,8 @@ public class LadderScript : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 Rigidbody body = other.GetComponent<Rigidbody>();
-                body.AddForce(Vector3.up*10f, ForceMode.Force);
+                body.AddForce(Vector3.up*10, ForceMode.Force);
             }
-            canJump = false;
         }
     }
 }

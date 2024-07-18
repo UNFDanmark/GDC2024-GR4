@@ -13,12 +13,12 @@ public class FeetCollider : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        isGrounded = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("floor"))
         {
@@ -26,11 +26,11 @@ public class FeetCollider : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("floor"))
-        {
-            isGrounded = false;
-        }
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("floor"))
+    //     {
+    //         isGrounded = false;
+    //     }
+    // }
 }
