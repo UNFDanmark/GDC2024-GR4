@@ -25,18 +25,18 @@ public class bushnHider : MonoBehaviour
     {
         if (isTimeTickingDown)
         {
-            if (didPressKey)
-            {
+            // if (didPressKey)
+            // {
                 opacityTimeLeft -= Time.deltaTime;
-            }
-            else
-            {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    didPressKey = true;
-                    colliderToActivate.willBeAllowedToInteract = true;
-                }
-            }
+            // }
+            // else
+            // {
+            //     if (Input.GetKeyDown(KeyCode.E))
+            //     {
+            //         didPressKey = true;
+            //         colliderToActivate.willBeAllowedToInteract = true;
+            //     }
+            // }
         }
         else
         {
