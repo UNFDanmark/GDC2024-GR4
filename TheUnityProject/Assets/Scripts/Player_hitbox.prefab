@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5
-  jumpForce: 10
+  jumpForce: 9
   feetCollider: {fileID: 231455184231725163}
   sprintingSpeed: 10
   canJump: 1
@@ -243,7 +243,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5791198074379758744}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0423329a4d1438240ae2a1c8ee7ea88a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -286,8 +286,8 @@ Transform:
   m_GameObject: {fileID: 9058065004888442784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11085881, y: -0.69393367, z: -0.0106594935}
-  m_LocalScale: {x: 1.0659504, y: 1.0659504, z: 1.0659504}
+  m_LocalPosition: {x: -0.044536, y: -0.82812, z: -0.01428}
+  m_LocalScale: {x: 0.42559022, y: 1.4259218, z: 1.6778059}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4749793648537558140}
@@ -417,6 +417,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8182107515299473962}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd83ec25d1c58f3438634871e5ed6d20,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 601491181123121867}
   m_SourcePrefab: {fileID: 100100000, guid: fd83ec25d1c58f3438634871e5ed6d20, type: 3}
 --- !u!4 &2621209284661911615 stripped
 Transform:
@@ -451,3 +455,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &601491181123121867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399011934455659141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81baad6b3b4141c49b0b6c64d2866595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

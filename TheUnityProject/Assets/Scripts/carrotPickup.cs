@@ -6,6 +6,10 @@ using UnityEngine;
 public class carrotPickup : MonoBehaviour
 {
     public carrotCount playerStorage; 
+    
+    // Daniel har skrevet nedstående variable
+    public bool willBeAllowedToInteract = true;
+    bool isAllowedToInteract;
     void Start()
     {
         
@@ -20,11 +24,17 @@ public class carrotPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && isAllowedToInteract)
             {
                 Destroy(gameObject);
                 playerStorage.carrotsCollected += 1;
             }
+        }
+
+        // Hvis man ikke holder knappen inde så kan den tillade at interact
+        if (!Input.GetKey(KeyCode.E))
+        {
+            isAllowedToInteract = willBeAllowedToInteract;
         }
     }
 }

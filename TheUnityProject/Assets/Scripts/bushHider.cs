@@ -17,7 +17,7 @@ public class bushnHider : MonoBehaviour
     
     void Start()
     {
-        material = bushObject.material;
+        material = bushObject.sharedMaterial;
         opacityTimeLeft = opacityTime;
     }
     
@@ -34,7 +34,7 @@ public class bushnHider : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     didPressKey = true;
-                    colliderToActivate.enabled = true;
+                    colliderToActivate.willBeAllowedToInteract = true;
                 }
             }
         }
