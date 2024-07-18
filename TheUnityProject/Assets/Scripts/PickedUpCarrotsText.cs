@@ -15,6 +15,6 @@ public class PickedUpCarrotsText : MonoBehaviour
     
     void Update()
     {
-        text.text = $"Carrots Collected: {carrotStorage.carrotsCollected} / 3";
+        text.text = $"Rabbits: {carrotStorage.carrotsCollected}/10";
     }
 }

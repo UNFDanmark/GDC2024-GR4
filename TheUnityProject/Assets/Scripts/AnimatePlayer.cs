@@ -15,7 +15,6 @@ public class AnimatePlayer : MonoBehaviour
     {
         float walkingX = Input.GetAxisRaw("Horizontal");
         _animator.SetFloat("Speed", Mathf.Abs(walkingX));
-        
         transform.LookAt(transform.position+new Vector3(walkingX, 0));
     }
 }
