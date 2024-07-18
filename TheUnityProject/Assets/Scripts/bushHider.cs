@@ -14,11 +14,13 @@ public class bushnHider : MonoBehaviour
     // Variables added by Daniel
     private bool didPressKey;
     public carrotPickup colliderToActivate;
+    private AudioSource discoveryAudioSource;
     
     void Start()
     {
         material = bushObject.sharedMaterial;
         opacityTimeLeft = opacityTime;
+        discoveryAudioSource = GetComponent<AudioSource>();
     }
     
     void Update()
@@ -62,6 +64,7 @@ public class bushnHider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isTimeTickingDown = true;
+            discoveryAudioSource.Play();
         }
     }
 

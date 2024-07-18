@@ -9,8 +9,12 @@ public class carrotCount : MonoBehaviour
     public NPC_collider CottageCollider;
     public bool AllowEnteringCottage;
     
+    // Daniel Variable
+    private AudioSource _audioSource;
+    
     void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
     }
     
     void Update()
@@ -31,5 +35,10 @@ public class carrotCount : MonoBehaviour
                 CottageCollider.currentChatIndexToActivate = 2;
             }
         }
+    }
+
+    public void PlayCollectSound()
+    {
+        _audioSource.Play();
     }
 }

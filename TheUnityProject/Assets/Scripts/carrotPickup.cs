@@ -28,6 +28,7 @@ public class carrotPickup : MonoBehaviour
             {
                 Destroy(gameObject);
                 playerStorage.carrotsCollected += 1;
+                playerStorage.PlayCollectSound();
             }
         }
 
