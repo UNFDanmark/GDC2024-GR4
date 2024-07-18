@@ -1,0 +1,7 @@
+Titel: World of secrets
+
+Controlls:
+
+	Walking: wasd / piltsterne
+	Running: shift
+	Jumping: mellemrum
