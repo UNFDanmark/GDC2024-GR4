@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game_startScript : MonoBehaviour
+public class GameStartScript : MonoBehaviour
 {
     public GameObject startScreen;
     public player_movement PlayerMovement;
